@@ -36,9 +36,9 @@ func getUptime() string {
 		mins -= 60
 		hours += 1
 	}
-
-	for hours >= 60 {
-		hours -= 60
+  
+	for hours >= 24 {
+		hours -= 24
 		days += 1
 	}
 
