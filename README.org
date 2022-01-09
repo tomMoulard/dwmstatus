@@ -15,8 +15,8 @@ edit ~plugins/plugins.go~ to change what is used/what order it is used in
     _ "dwmstatus/plugins/battery"
   )
 #+END_SRC
-this would be "uptime | cpu | memory | time | date | battery"
+this would be ~uptime | cpu | memory | time | date | battery~
 simply moving one of those in the list dictates where it will end up in the list
-like moving cpu up 1 would make it "cpu | uptime | memory | ..."
+like moving cpu up 1 would make it ~cpu | uptime | memory | ...~
 
 then all you do is ~go build~ and copy the binary to ur ~PATH~ and ur good to just run it and have fun
