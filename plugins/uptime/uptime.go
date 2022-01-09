@@ -41,6 +41,16 @@ func getUptime() string {
 		hours -= 24
 		days += 1
 	}
+	uptimetxt := ""
 
-	return fmt.Sprintf("Up: %dd %dh %dm", days, hours, mins)
+	if days > 1 {
+		uptimetxt = fmt.Sprintf("Up: %dd %dh %dm", days, hours, mins)
+	} else if hours > 1 {
+		uptimetxt = fmt.Sprintf("Up: %dh %dm", hours, mins)
+	} else {
+		uptimetxt = fmt.Sprintf("Up: %dm", mins)
+	}
+
+
+	return uptimetxt
 }
