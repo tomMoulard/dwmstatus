@@ -36,5 +36,5 @@ func getUptime() string {
 		hours += 1
 	}
 
-	return fmt.Sprintf("Up: %d hours %d minutes", hours, mins)
+	return fmt.Sprintf("Up: %dh %dm", hours, mins)
 }
