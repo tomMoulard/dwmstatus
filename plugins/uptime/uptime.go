@@ -28,6 +28,7 @@ func getUptime() string {
 		log.Panic(err)
 	}
 
+	days := 0
 	hours := 0
 	mins := u / 60
 
@@ -35,6 +36,11 @@ func getUptime() string {
 		mins -= 60
 		hours += 1
 	}
+  
+	for hours >= 24 {
+		hours -= 24
+		days += 1
+	}
 
-	return fmt.Sprintf("Up: %dh %dm", hours, mins)
+	return fmt.Sprintf("Up: %dd %dh %dm", days, hours, mins)
 }
