@@ -1,10 +1,10 @@
 package plugins
 
 import (
-	_ "dwmstatus/plugins/battery"
-	_ "dwmstatus/plugins/cpu"
-	_ "dwmstatus/plugins/date"
-	_ "dwmstatus/plugins/memory"
-	_ "dwmstatus/plugins/time"
-	_ "dwmstatus/plugins/uptime"
+	_ "github.com/idkso/dwmstatus/plugins/battery"
+	_ "github.com/idkso/dwmstatus/plugins/cpu"
+	_ "github.com/idkso/dwmstatus/plugins/date"
+	_ "github.com/idkso/dwmstatus/plugins/memory"
+	_ "github.com/idkso/dwmstatus/plugins/time"
+	_ "github.com/idkso/dwmstatus/plugins/uptime"
 )
