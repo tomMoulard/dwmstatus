@@ -7,4 +7,5 @@ import (
 	_ "github.com/idkso/dwmstatus/plugins/memory"
 	_ "github.com/idkso/dwmstatus/plugins/time"
 	_ "github.com/idkso/dwmstatus/plugins/uptime"
+	_ "github.com/idkso/dwmstatus/plugins/wttr"
 )
