@@ -18,6 +18,7 @@ func init() {
 func handleCPU(c chan string) {
 	for {
 		c <- getCPU()
+
 		time.Sleep(time.Millisecond * 500)
 	}
 }
@@ -27,9 +28,11 @@ func getCPU() string {
 	if err != nil {
 		log.Panic(err)
 	}
-	var total float64 = 0
+
+	var total float64
 	for _, p := range cper {
 		total += p
 	}
+
 	return fmt.Sprintf("CPU: %d", int(total)/len(cper)) + "%"
 }
